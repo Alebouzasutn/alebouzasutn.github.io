@@ -27,17 +27,27 @@
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
       transition: transform 0.3s, box-shadow 0.3s;
+      color: #dcdcdc;
     }
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 25px rgba(0,0,0,0.5);
     }
+    .card h5 {
+      color: #1e90ff;
+    }
     .tech-icons img, .tools-icons img {
-      transition: transform 0.3s;
       margin: 5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: float 3s ease-in-out infinite;
     }
     .tech-icons img:hover, .tools-icons img:hover {
-      transform: scale(1.2);
+      transform: scale(1.3);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
     }
     .btn-linkedin {
       background-color: #0A66C2;
@@ -84,7 +94,7 @@
 
   <!-- Tecnologías Backend -->
   <h2 class="mb-3">🚀 Tecnologías Backend | Backend Technologies</h2>
-  <div class="tech-icons">
+  <div class="tech-icons text-center">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="50" height="50"/>
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" alt="Spring" width="50" height="50"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg" alt="AWS" width="50" height="50"/>
@@ -95,7 +105,7 @@
 
   <!-- Tools -->
   <h2 class="mt-5 mb-3">🛠️ Herramientas | Tools</h2>
-  <div class="tools-icons">
+  <div class="tools-icons text-center">
     <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="50" height="50"/>
     <img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" alt="Swagger" width="50" height="50"/>
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="50" height="50"/>
@@ -193,4 +203,3 @@
 
 </body>
 </html>
-
